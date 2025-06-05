@@ -40,7 +40,7 @@ export default function HeroSection() {
             {/* Title/Role */}
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-electric-violet-400 via-electric-violet-500 to-electric-violet-600 bg-clip-text text-transparent">
-                Desarrollador Full Stack
+                Estudiante de ingeriería de software
               </span>
             </h2>
 
