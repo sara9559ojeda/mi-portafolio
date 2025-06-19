@@ -93,7 +93,7 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <p className="text-electric-violet-300/70 text-sm">
-                    Espacio para tu diseño 3D
+                    Diseño 3d en rpoceso
                   </p>
                 </div>
               </div>
