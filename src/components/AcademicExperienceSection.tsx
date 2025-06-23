@@ -106,10 +106,7 @@ export default function AcademicExperienceSection() {
 
         {/* Timeline */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Timeline Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-electric-violet-500 via-electric-violet-400 to-electric-violet-600 transform md:-translate-x-0.5"></div>
-
-          {/* Timeline Items */}
           <div className="space-y-8 sm:space-y-12">
             {academicHistory.map((item, index) => (
               <div
@@ -121,17 +118,14 @@ export default function AcademicExperienceSection() {
                 }`}
                 style={{ transitionDelay: `${index * 300}ms` }}
               >
-                {/* Timeline Node */}
                 <div className={`absolute left-2 md:left-1/2 w-4 h-4 rounded-full bg-${item.color} border-4 border-black transform md:-translate-x-1/2 z-20 shadow-lg`}>
                   <div className={`absolute inset-0 rounded-full bg-${item.color} animate-ping opacity-20`}></div>
                 </div>
-
-                {/* Content Card */}
                 <div className={`ml-12 md:ml-0 ${
                   index % 2 === 0 ? 'md:pr-8 md:text-right md:mr-8' : 'md:pl-8 md:ml-8'
                 } max-w-lg ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                   <div className="group relative p-6 bg-gradient-to-br from-electric-violet-900/10 to-black/40 rounded-2xl border border-electric-violet-500/20 hover:border-electric-violet-400/40 transition-all duration-300 hover:transform hover:scale-105 backdrop-blur-sm">
-                    {/* Year Badge */}
+
                     <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-3 ${
                       item.status === 'En Proceso' 
                         ? 'bg-electric-violet-500/20 text-electric-violet-300 border border-electric-violet-500/30' 
@@ -139,8 +133,6 @@ export default function AcademicExperienceSection() {
                     }`}>
                       {item.year}
                     </div>
-
-                    {/* Title and Icon */}
                     <div className={`flex items-center gap-3 mb-2 ${
                       index % 2 === 0 ? 'md:flex-row-reverse md:justify-end' : ''
                     }`}>
@@ -151,13 +143,9 @@ export default function AcademicExperienceSection() {
                         {item.title}
                       </h3>
                     </div>
-
-                    {/* Institution */}
                     <p className="text-electric-violet-300 font-medium mb-2">
                       {item.institution}
                     </p>
-
-                    {/* Status Badge */}
                     <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium mb-3 ${
                       item.status === 'En Proceso' 
                         ? 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30' 
@@ -165,16 +153,10 @@ export default function AcademicExperienceSection() {
                     }`}>
                       {item.status}
                     </div>
-
-                    {/* Description */}
                     <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                       {item.description}
                     </p>
-
-                    {/* Hover Effect Overlay */}
                     <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-5 bg-gradient-to-br from-white to-transparent transition-opacity duration-300 pointer-events-none"></div>
-
-                    {/* Decorative Elements */}
                     <div className="absolute top-3 right-3 w-2 h-2 bg-electric-violet-400 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                   </div>
                 </div>
@@ -182,8 +164,6 @@ export default function AcademicExperienceSection() {
             ))}
           </div>
         </div>
-
-        {/* Call to Action */}
         <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-900 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>

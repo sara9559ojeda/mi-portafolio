@@ -35,6 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${rock3D.variable} antialiased`}
       >
         <Navbar />
+        
         {children}
       </body>
     </html>

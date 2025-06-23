@@ -35,14 +35,12 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          {/* Logo */}
           <div className="flex-shrink-0 z-10">
             <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-electric-violet-400 to-electric-violet-600 bg-clip-text text-transparent font-[family-name:var(--font-rock3d)]">
-              Mi Portfolio
+              Mi Portafolio
             </h1>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item, index) => (

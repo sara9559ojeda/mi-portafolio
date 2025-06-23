@@ -11,7 +11,6 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pt-16 md:pt-20">
-      {/* Background Gradient Orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-electric-violet-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-electric-violet-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
@@ -29,38 +28,29 @@ export default function HeroSection() {
                 👋 Hola, soy
               </span>
             </div>
-
-            {/* Main Name */}
             <h1 className="text-4xl  sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mr-0 sm:mr-40 sm:pr-20  mr-30 ">
               <span className="bg-gradient-to-r  from-white to-gray-300 bg-clip-text text-transparent font-[family-name:var(--font-rock3d)]">
                 Sara Maria Ojeda Lopez
               </span>
             </h1>
-
-            {/* Title/Role */}
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-electric-violet-400 via-electric-violet-500 to-electric-violet-600 bg-clip-text text-transparent">
                 Estudiante de ingeriería de software
               </span>
             </h2>
-
-            {/* Description */}
             <p className="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 max-w-2xl">
-              Apasionado por crear experiencias digitales excepcionales. 
-              Especializado en desarrollo web moderno con tecnologías de vanguardia.
+              Hola, soy Sara, estudiante de Ingeniería de Software apasionada por la ciberseguridad, 
+              el desarrollo de software, y la creación de experiencias digitales. Sigue para conocer más sobre mí. 
             </p>
-
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <a href="#projects">
               <button className="bg-gradient-to-r  from-electric-violet-500 to-electric-violet-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:from-electric-violet-600 hover:to-electric-violet-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-electric-violet-500/25 text-sm sm:text-base">
                 Ver Proyectos
-              </button>
+              </button></a>
               <button className="border border-electric-violet-500/50 text-electric-violet-300 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-electric-violet-500/10 hover:border-electric-violet-400 transition-all duration-300 text-sm sm:text-base">
                 Descargar CV
               </button>
             </div>
-
-            {/* Social Links */}
             <div className="flex space-x-6 mt-6 sm:mt-8">
               <a href="#" className="text-gray-400 hover:text-electric-violet-400 transition-colors duration-300">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -79,8 +69,6 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-
-          {/* Right Side - 3D Design Container */}
           <div className={`relative transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
@@ -93,12 +81,10 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <p className="text-electric-violet-300/70 text-sm">
-                    Diseño 3d en rpoceso
+                    Diseño 3d en proceso
                   </p>
                 </div>
               </div>
-
-              {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-electric-violet-500 rounded-full animate-pulse opacity-60"></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-electric-violet-400 rounded-full animate-pulse opacity-40 delay-700"></div>
               <div className="absolute top-1/2 -left-6 w-4 h-4 bg-electric-violet-600 rounded-full animate-pulse opacity-50 delay-300"></div>
