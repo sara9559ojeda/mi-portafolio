@@ -26,6 +26,20 @@ export default function AcademicExperienceSection() {
   const academicHistory = [
     {
       year: '2022',
+      title: 'Bachiller Académico',
+      institution: 'Quijano Vodniza',
+      status: 'Completado',
+      description: 'Formación básica académica',
+      icon: (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 13l6.232-6.232a2 2 0 012.828 0l.172.172a2 2 0 010 2.828L12 17H9v-3zM19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+</svg>
+
+      ),
+      color: 'electric-violet-500'
+    },
+    {
+      year: '2022',
       title: 'Técnico Auxiliar de Electrónica',
       institution: 'Cinar sistemas',
       status: 'Completado',
@@ -67,7 +81,6 @@ export default function AcademicExperienceSection() {
 
   return (
     <section id="academic-experience" className="py-16 sm:py-20 bg-black relative overflow-hidden">
-      {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-10 w-40 h-40 bg-electric-violet-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
         <div className="absolute bottom-20 left-10 w-60 h-60 bg-electric-violet-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
@@ -103,8 +116,6 @@ export default function AcademicExperienceSection() {
             Mi trayectoria educativa en tecnología y desarrollo de software
           </p>
         </div>
-
-        {/* Timeline */}
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-electric-violet-500 via-electric-violet-400 to-electric-violet-600 transform md:-translate-x-0.5"></div>
           <div className="space-y-8 sm:space-y-12">

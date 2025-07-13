@@ -1,7 +1,7 @@
-import AcademicExperienceSection from "@/components/AcademicExperienceSection";
-import HeroSection from "@/components/HeroSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import TechnologiesSection from "@/components/TechnologiesSection";
+import AcademicExperienceSection from "@/app/AcademicExperienceSection/page";
+import HeroSection from "@/app/HeroSection/page";
+import ProjectsSection from "@/app/ProjectsSection/page";
+import TechnologiesSection from "@/app/TechnologiesSection/page";
 import Image from "next/image";
 
 export default function Home() {

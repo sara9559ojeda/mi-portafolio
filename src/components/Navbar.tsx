@@ -21,9 +21,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'Inicio', href: '#home' },
-    { name: 'Acerca de', href: '#about' },
+    { name: 'Acerca de mí', href: '#about' },
+    { name: 'Experiencia Académica', href: '#academic-experience' },
+    { name: 'Tecnologías', href: '#technologies' },
     { name: 'Proyectos', href: '#projects' },
-    { name: 'Habilidades', href: '#skills' },
     { name: 'Contacto', href: '#contact' },
   ];
 
